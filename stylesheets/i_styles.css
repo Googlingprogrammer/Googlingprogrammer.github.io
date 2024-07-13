@@ -57,8 +57,6 @@
   }
   
   #game-wrapper {
-    width: 70%;
-    padding: 2%;
     box-sizing: border-box;
     margin-left: 23%; /* Move the game 23% to the right */
     position: relative; /* Ensure game-info is positioned relative to this wrapper */
