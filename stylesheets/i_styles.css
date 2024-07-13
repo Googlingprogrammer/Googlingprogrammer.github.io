@@ -4,17 +4,12 @@
     font-weight: normal;
     font-style: normal;
   }
-  
-  html, body {
-      height: 100%;
-  }
     
   body {
       margin: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       background-color: deepskyblue;
       width: 100%;
       font-family: "Pixel", "Avenir", Helvetica, sans-serif;
@@ -58,25 +53,11 @@
   
   #game-wrapper {
     box-sizing: border-box;
-    margin-left: 23%; /* Move the game 23% to the right */
-    position: relative; /* Ensure game-info is positioned relative to this wrapper */
+    margin-left: 7%;
+    position: relative;
 }
-  
-  #game-info {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      font-size: 0.5em; 
-      color: white;
-      z-index: 2;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 5px; /* Optional: Add padding for better appearance */
-      border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-  }
-  
   #game {
       width: 100%;
-      padding: 2%;
       box-sizing: border-box;
   }
   
