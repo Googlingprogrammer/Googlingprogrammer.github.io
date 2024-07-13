@@ -82,17 +82,18 @@
       box-sizing: border-box;
   }
   
-  #menu-icon {
-      cursor: pointer;
+  #hamburger {
+      cursor: default;
       position: absolute;
       top: 2%;
       right: 10%;
-      font-size: 2em; /* Adjust icon size as needed */
-      color: white; /* Adjust icon color as needed */
-      transition: color 0.3s;
   }
   
-  #menu-icon:hover {
-      color: lightgray; /* Change color on hover */
+  #bar1, #bar2, #bar3 {
+      width: 50px;
+      height: 10px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.5s;
   }
   
