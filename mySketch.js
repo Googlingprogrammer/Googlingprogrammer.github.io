@@ -27,7 +27,7 @@ function preload(){
 
 function setup() {
   var canvas = createCanvas(600, 320, 'pixelated');
-  Canvas.parent('game-wrapper');
+  canvas.parent('game-wrapper');
 	world.gravity.y = 10;
 	allSprites.pixelPerfect = true;
 	
