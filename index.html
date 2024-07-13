@@ -1,28 +1,31 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minh Nguyen's site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="scripts/p5.min.js"></script>
-		<script src="scripts/planck.min.js"></script>
-		<script src="scripts/p5play.js"></script>
-                <script src="mySketch.js"></script>
-        <link rel="stylesheet" href="stylesheets/i_styles.css">
-    </head>
+    <script src="scripts/p5.min.js"></script>
+    <script src="scripts/planck.min.js"></script>
+    <script src="scripts/p5play.js"></script>
+    <script src="mySketch.js"></script>
+    <link rel="stylesheet" href="stylesheets/i_styles.css">
+</head>
 <body>
     <nav>
-    <a href="works.html" target = "_self">WORKS</a>
-    <a href="about.html" target = "_self">ABOUT ME</a>
-    <!-- <a href="mailto:minh.nguyen.ocadu.ca">CONTACT</a> -->
-    <div id="hamburger">
+        <a href="works.html" target="_self">WORKS</a>
+        <a href="about.html" target="_self">ABOUT ME</a>
+        <!-- <a href="mailto:minh.nguyen.ocadu.ca">CONTACT</a> -->
+        <div id="hamburger">
             <div id="bar1"></div>
             <div id="bar2"></div>
             <div id="bar3"></div>
-    </div>
-</nav>
-<!--    p5's canvas are unfornately not very adaptive since alot of the game's code are tied to the canvas' coordinates-->
-    <div id ="game"> 
-        <script src="mySketch.js"></script>
+        </div>
+    </nav>
+    <div id="game-wrapper">
+        <p id="game-info">Assets from Quinton Ashley's P5 platformer</p>
+        <div id="game">
+            <script src="mySketch.js"></script>
+        </div>
     </div>
 </body>
-
 </html>
