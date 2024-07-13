@@ -57,21 +57,21 @@
   }
   
   #game-wrapper {
-      width: 70%;
-      padding: 2%;
-      box-sizing: border-box;
-      margin-left: 25%; /* Adjust according to the nav width */
-      position: relative; /* Ensure game-info is positioned relative to this wrapper */
-  }
+    width: 70%;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-left: 23%; /* Move the game 23% to the right */
+    position: relative; /* Ensure game-info is positioned relative to this wrapper */
+}
   
   #game-info {
       position: absolute;
       bottom: 20px;
       right: 20px;
-      font-size: 0.5em; /* Adjust font size as needed */
+      font-size: 0.5em; 
       color: white;
-      z-index: 2; /* Higher z-index to ensure it is on top */
-      background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better readability */
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 5px; /* Optional: Add padding for better appearance */
       border-radius: 5px; /* Optional: Add border-radius for rounded corners */
   }
