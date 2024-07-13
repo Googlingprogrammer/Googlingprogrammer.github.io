@@ -1,100 +1,98 @@
 @font-face {
-  font-family: "Pixel";
-  src: url('../fonts/pixelfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html, body {
-    height: 100%;
+    font-family: "Pixel";
+    src: url('../fonts/pixelfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
   
+  html, body {
+      height: 100%;
+  }
+    
   body {
-    margin: 0;
-    display: flex;
-  
-    /* This centers our sketch horizontally. */
-    justify-content: center;
-  
-    /* This centers our sketch vertically. */
-    align-items: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: deepskyblue;
+      width: 100%;
+      font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+      font-size: 2.5em;
   }
-
-body {
-    background-color: deepskyblue;
-    width: 100%;
-    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
-    font-size: 2.5em;
-}
-
-nav {
-    display: block;
-    color: white;
-    height: 100%;
-    width: 23%;
-    background-color: darkseagreen;
-    padding: 2%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: +1;
-    margin-left: -20%;
-    transition: margin-left 1s;
-}
-
-nav:hover, nav:active {
-    margin-left: 0;
-}
-
-nav a {
-    color: white;
-    display: block;
-    font-weight: bold;
-}
-
-nav a:link {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-nav a:hover, nav a:active {
-    text-decoration: underline;
-}
-
-#game-wrapper {
-    float: left;
-    width: 70%;
-    padding: 2%;
-    box-sizing: border-box;
-    margin-left: 25%; /* Adjust according to the nav width */
-    position: relative; /* Ensure game-info is positioned relative to this wrapper */
-}
-
-#game-info {
-    text-align: center;
-    font-size: 0.5em; /* Adjust font size as needed */
-    color: white;
-    margin-bottom: 20px;/* Space between text and game */
-}
-
-#game {
-    width: 100%;
-    padding: 2%;
-    box-sizing: border-box;
-}
-
-#hamburger {
-    cursor: default;
-    position: absolute;
-    top: 2%;
-    right: 10%;
-}
-
-#bar1, #bar2, #bar3 {
-    width: 50px;
-    height: 10px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.5s;
-}
+  
+  nav {
+      display: block;
+      color: white;
+      height: 100%;
+      width: 23%;
+      background-color: darkseagreen;
+      padding: 2%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      margin-left: -20%;
+      transition: margin-left 1s;
+  }
+  
+  nav:hover, nav:active {
+      margin-left: 0;
+  }
+  
+  nav a {
+      color: white;
+      display: block;
+      font-weight: bold;
+  }
+  
+  nav a:link {
+      color: #FFF;
+      text-decoration: none;
+      font-size: 1.5em;
+  }
+  
+  nav a:hover, nav a:active {
+      text-decoration: underline;
+  }
+  
+  #game-wrapper {
+      width: 70%;
+      padding: 2%;
+      box-sizing: border-box;
+      margin-left: 25%; /* Adjust according to the nav width */
+      position: relative; /* Ensure game-info is positioned relative to this wrapper */
+  }
+  
+  #game-info {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 0.5em; /* Adjust font size as needed */
+      color: white;
+      z-index: 2; /* Higher z-index to ensure it is on top */
+      background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better readability */
+      padding: 5px; /* Optional: Add padding for better appearance */
+      border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  #game {
+      width: 100%;
+      padding: 2%;
+      box-sizing: border-box;
+  }
+  
+  #menu-icon {
+      cursor: pointer;
+      position: absolute;
+      top: 2%;
+      right: 10%;
+      font-size: 2em; /* Adjust icon size as needed */
+      color: white; /* Adjust icon color as needed */
+      transition: color 0.3s;
+  }
+  
+  #menu-icon:hover {
+      color: lightgray; /* Change color on hover */
+  }
+  
