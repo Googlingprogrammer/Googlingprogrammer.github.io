@@ -1,4 +1,4 @@
-@font-face {
+   @font-face {
     font-family: "Pixel";
     src: url('../fonts/pixelfont.ttf') format('truetype');
     font-weight: normal;
@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 .grid-container {
-    margin: 200px;
+    margin: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to fit items */
     gap: 50px; /*extremely important for not overlapping */
