@@ -3,136 +3,167 @@
     src: url('../fonts/pixelfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  body {
-      background-color: darkseagreen;
-      width: 100%;
-      font-family: "Pixel", "Avenir", Helvetica, sans-serif;
-      font-size: 2.5em;
-      color: white;
-  }
-  
-  nav {
-      background-color: #FC8A17;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-around;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-  }
-  
-  nav a {
-      margin: 0;
-      text-decoration: none;
-      color: white;
-      padding: 25px 0px; /* Add padding to the links for spacing */
-      flex-grow: 1;
-      text-align: center;
-      display: block;
-      transition: background-color 0.3s;
-  }
-  
-  nav a:hover {
-      background-color: darkseagreen; /* Change this to your desired hover color */
-  }
-  
-  #wrapper {
-      margin: 100px auto;
-      font-size: 0.5em;
-      width: 70%;
-      padding-top: 80px; /* Adjust this value to create the desired space */
-      font-family: "Avenir", Helvetica, sans-serif;
-      display: flex;
-      flex-direction: column; /* Stack content-blocks vertically */
-      align-items: center;
-  }
-  
-  .content-block {
-      width: 100%; /* Ensure full-width content blocks */
-      box-sizing: border-box;
-      padding: 20px;
-  }
-  
-  .left_image {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-  }
-  
-  .portfoliolink {
-      text-align: center;
-      padding-top: 80px;
-      font-family: "Pixel", "Avenir", Helvetica, sans-serif;
-  }
-  
-  .portfoliolink a {
-      color: white;
-      font-size: 0.5em;
-      transition: font-size 0.3s;
-      text-decoration: none;
-  }
-  
-  .portfoliolink a:hover {
-      font-size: 1em;
-      cursor: pointer;
-      text-decoration: underline;
-  }
-  
-  .portfoliolink a:visited {
-      color: white;
-      text-decoration: none;
-  }
-  
-  .imgcontainer {
-      margin: 200px;
-      text-align: center;
-  }
-  
-  .imgcontainer video {
-      margin: 0 auto; /* Horizontally center the video */
-      display: block;
-  }
-  
-  .imgcontainer img {
-      width: 80%;
-      height: auto;
-  }
-  
-  .contact-links {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 3em; /* Adjust the spacing between icons */
-  }
-  
-  .contact-icon {
-      color: white;
-      font-size: 3em; /* Adjust the icon size */
-      transition: color 0.3s, transform 0.3s;
-  }
-  
-  .contact-icon:hover {
-      color: #FC8A17; /* Change to your desired hover color */
-      transform: scale(1.2); /* Slightly enlarge the icon on hover */
-  }
-  .highlight {
-    font-size: 1.5em; /* Adjust the size as needed */
-    font-weight: bold;
 }
 
-.hoverable {
-    transition: font-size 0.3s, transform 0.3s;
+body {
+    background-color: darkseagreen;
+    width: 100%;
+    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+    padding-top: 80px; /* Adjust this value to match the padding of .portfoliolink */
 }
 
-.hoverable:hover {
-    font-size: 1.2em; /* Adjust the size as needed */
-    transform: scale(1.2); /* Slightly enlarge on hover */
-    font-weight: bold;
+nav {
+    background-color: #FC8A17;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
+
+nav a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    padding: 25px 0px;
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: darkseagreen;
+}
+
+.portfoliolink {
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+}
+
+.portfoliolink a {
+    color: black;
+    transition: font-size 0.3s;
+    text-decoration: none;
+}
+
+.portfoliolink a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.portfoliolink a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-container {
+    margin: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to fit items */
+    gap: 50px; /*extremely important for not overlapping */
+    justify-items: center;
+    align-items: start;
+    margin-top: 40px;
+    padding: 0 20px; /* Add padding to center the content */
+}
+
+.grid-item {    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    background-color: rgb(233, 216, 200);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: inherit;
+    transition: transform 0.3s; /* Optional: Add a hover effect */
+}
+
+.grid-item:hover {
+    transform: scale(1.1); /* Optional: Add a hover effect */
+}
+
+.grid-item img.grid-gif {
+    width: 100%;
+    height: 80%; /* Adjust the height to fit within the box */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-bottom: 2px solid #FC8A17;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Add this line to round the corners */
+}   
+
+.grid-item span {
+    margin: 20px;
+    font-size: 1.25em;
+    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+}
+
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    background-color: #FC8A17;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 101; /* Ensure it is above other elements */
+    transition: background-color 0.3s, transform 0.3s; /* Add hover effect */
+}
+
+.back-arrow:hover {
+    background-color: darkseagreen;
+    transform: scale(1.1); /* Optional: Add a hover effect */
+}
+
+/* Debugging styles
+.grid-item {
+    border: 1px dashed red;
+    position: relative; 
+
+.grid-item::before {
+    content: attr(data-debug);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 0.5em;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.grid-item img.grid-gif {
+    border: 1px solid blue;
+}
+
+
+    border: 1px solid green;
+}
+
+nav {
+    border: 1px solid orange;
+}
+
+.portfoliolink {
+    border: 1px solid purple;
+} */
+
