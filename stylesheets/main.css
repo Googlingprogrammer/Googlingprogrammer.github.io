@@ -46,7 +46,6 @@ nav a:hover {
 }
 
 .portfoliolink {
-    margin-top: 200px;
     text-align: center;
     font-family: "Pixel", "Avenir", Helvetica, sans-serif;
 }
@@ -133,6 +132,46 @@ nav a:hover {
     background-color: darkseagreen;
     transform: scale(1.1); /* Optional: Add a hover effect */
 }
+
+.video-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* Ensures the correct aspect ratio */
+    border: none;
+}
+
+.video-container div {
+    max-width: 560px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .video-container {
+        flex-direction: row;
+    }
+
+    .video-container:nth-child(even) {
+        flex-direction: row-reverse; /* Alternate position */
+    }
+
+    .video-container iframe, .video-container div {
+        flex: 1 1 45%;
+    }
+}
+
 
 /* Debugging styles
 .grid-item {
