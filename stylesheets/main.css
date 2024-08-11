@@ -1,4 +1,4 @@
-   @font-face {
+@font-face {
     font-family: "Pixel";
     src: url('../fonts/pixelfont.ttf') format('truetype');
     font-weight: normal;
@@ -170,6 +170,25 @@ nav a:hover {
     .video-container iframe, .video-container div {
         flex: 1 1 45%;
     }
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.contact-icon {
+    color: white; /* Icon color */
+    font-size: 2.5em; /* Initial icon size */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Animation for size and color */
+    text-decoration: none;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    color: #FC8A17; /* Change color on hover */
 }
 
 
