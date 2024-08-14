@@ -9,49 +9,92 @@
 </head>
 <body>
     <nav>
-        <a class="menu" href="../works.html" target="_self"><< BACK</a>
+        <a class="menu" href="works_game.html" target="_self"><< BACK</a>
         <a class="menu" href="../index.html" target="_self">HOME</a>
         <a class="menu" href="../about.html" target="_self">ABOUT ME</a>
     </nav>
 
     <div class="content-wrapper">
-        <section class="intro">
-            <h1>Banh Mi Wars</h1>
-            <h2>Card Game</h2>
-            <p>Banh Mi Wars is a 2-4 players competitive card game about making a delicious Banh Mi sandwich - as cards! Players are competing Banh Mi vendors trying to be the first to assemble an order. Draw the required pieces, cook the needed ingredients in your stove, overcome the many random events, fight and sabotage your way in all out BANH MI WARS!</p>
-        </section>
-
         <section class="media">
             <div class="media-images">
                 <img src="../images/Banhmiwar1.jpg" alt="game image 1">
                 <img src="../images/banhmiwars 2.jpg" alt="game image 2">
             </div>
         </section>
-        <iframe src="https://www.youtube.com/embed/LfscSJ3jWYk?si=sF6HEkCmZME_-bL6" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <section class="intro">
+            <div class="intro-content">
+                <iframe class="media-video" src="https://www.youtube.com/embed/LfscSJ3jWYk?si=sF6HEkCmZME_-bL6" title="YouTube video player" allowfullscreen></iframe>
+                <div class="intro-text">
+                    <h1 class="highlight" style="font-size: 6em;">Banh Mi Wars</h1>
+                    <h2 style="font-size: 2em;">Card Game</h2>
+                    <p>Banh Mi Wars is a 2-4 players competitive card game about making a delicious Banh Mi sandwich - as cards! Players are competing Banh Mi vendors trying to be the first to assemble an order.</p>
+                    <p>Schools out, hordes of hungry students spill out of the gates! You are a Banh Mi vendor,
+                        competing with other vendors. Grab the right ingredients for the Banh Mi order or sabotage other
+                        vendors’ Banh Mi to win! Will you be the first to fill their bellies?</p>
+                    <p>Draw the required pieces, cook the needed ingredients in your stove, overcome the many random events, fight and sabotage your way in all out BANH MI WARS!</p>
+                </div>
+            </div>
+        </section>
+        
 
         <section class="how-to-play">
             <h2>How to Play</h2>
             <div class="how-to-images">
                 <img src="../images/Banhmi War - How to Play.jpg" alt="instruction image 1">
             </div>
-            <p>Instructions on how to play the game.</p>
+            <p class="hover-highlight"><span>GOAL: </span>In Banh Mi Wars, the players who assemble the Banh Mi order first is the winner!</p>
+            <p class="hover-highlight"><span>SET UP: </span>Draw 3 cards, set them where everyone can view easily. This is the order of the round</p>
+            <p class="hover-highlight"><span>PLAY: </span>Every turn, players get 2 actions. Either <span>PLAY</span> cards for their effects or <span>COOK</span> some cards in a stove to enhance their deliciousness... and effects!</p>
+            <p class="hover-highlight"><span">WIN: </span>Anytime a player gets all the ingredients in the order in their hand or stove, with 2 <span>BANH MIS</span>, they instantly win!</p>
         </section>
+        <img style="width: 30%; margin-bottom: 100px;"  class="img_center" src="../images/stove.png">
+        <img class="img_center" src="../images/Banh Mi Wars Playspace.jpg" alt="Playspace">
 
         <section class="cards">
             <h2>Cards</h2>
             <img src="../images/Ingredients Cards.jpg" alt="Cards list 1">
-            <p>Text explaining the cards.</p>
+            <p class="hover-highlight">In Banh Mi Wars, there are a large variety of ingredients cards that may make up a round's order.</p>
+            <p class="hover-highlight">Combo your cards together effectively! Butter your eggs up to steal 2 cards from your opponents... Play a bunch of pickles so sour, they mess everyone up...</p>
+            <p class="hover-highlight">Craft the perfect Banh Mi while destroying other's!</p>
         </section>
 
         <section class="event-cards">
             <h2>Event Cards</h2>
             <img src="../images/Event Cards.jpg" alt="Event cards">
-            <p>Text explaining the event cards.</p>
+            <p>Throughout play, you may stumble upon a <span>BREAKING NEWS</span> cards!</p>
+            <p>Whenever this card is drawn, instantly trigger a chaotic event!</p>
+            <p>Events may speed the game up like <span>THE RUSH HOUR</span>, mess up the order like <span>ACTUALLY... I ORDERED...</span></p>
+            <p>Or mess everyone up like <span>HANOI RAINY AFTERNOON</span>!</p>
         </section>
-
+        <div id="cards_container">
+            <img src="../images/Breakingnewscard.png" alt="breaking news">
+            <img src="../images/ACTUALLY....png">
+            <img src="../images/HRA.png">
+        </div>
         <section class="design-process">
             <h2>Design Process</h2>
-            <p>Details about the design process.</p>
+            <img src="../images/Banh Mi Wars Final Presentation (2)_Page_04.jpg">
+            <p>I created Banh Mi Wars solo! That means designing all the game mechanics and illustrated all the cards!</p>
+            <p>Did you know? Banh Mi Wars underwent rigorous play testing, with over <span>100+ play test</span> conducted and <span>6 iterations</span>  to reach this version!</p>
+            <p>Even in earlier versions, a mechanic I knew I wanted for sure was having players assemble cards
+                “banh mi”, with 2 sandwich buns stacked on top and bottom and some tasty ingredients in the
+                middle. The other one was there to be a “cooking” mechanic.
+                At its core, I wanted to create a push-your-luck style card games where players also interacted heavily. There are banh mi cards, cookable ingredients cards and normal
+                ingredients cards.</p>
+            <p>One of the earliest ingredients of the game involved players assembling the sandwich on the table for everyone to see. Because I wanted every cards to have a special effects involved, playing a card became confusing, do you play the cards to assemble the sandwich, for its effects or both?</p>
+            <p>Another core mechanic of play was "cooking" a card. Because every cards cost the same to play due to the action economy (every cards costing 1 actions) I wanted a design space that allows for more powerful cards with by having trade off. "Cooking" cards were introduced, involving playing it into the stove, waiting 1 turn and now returning it to your hand. This achieved multiple goals succesfully, having higher actions cost, being immersive and flavorful for gameplay and giving away information as a trade off. While this worked, it was confusing</p>
+            <p>The next version had a similar gameplay but this time, players just needed to draw the
+                required winning conditions in their hand, without needing to assemble it on the table.
+                This cuts down significantly on confusion
+                when playing a card. The version's cooking mechanic involved placing it down and picking it up next turn, flipping the card to its back to indicated doneness. (As indicated in the picture above, with eggs being a 2-sided cookable card).
+                 This gave a way alot of information which I intially thought was a good indicator for progress since this version having players assembling cards on their hand did not give away adamamant information for players to track progress.</p>
+            <p>After numerous more playtest, more skilled player were often able to track cards played and deducted player's hand without the for so much information presented on the card back. Additionally, it was pointed out that since the cooking cards is seen by everyone, it is redundant to have the cards layout with 2 side like version 1.
+                 This opened the way to design a new cooking mechanic. In the next version, cooking now had players swapped out cards from a side deck after it was cooked.</p>
+            <p>While this worked, it was tedious to set up and clean up. This strayed away from my intention to make the game fast.</p>
+            <p>After numerous play tests, various mechanics were added. Events cards to spice up play, shortening game length. Double action economy to encourage comboing cards together. Multiple new ingriedients cards and effect that increase player interaction while not making it too hard for a player to win. A whole new cooking mechanic, where the game is now, involving playing it twice, once into the stove to cook it and once from the stove. I'm finally happy with the gameplay and pace of the game!</p>
+            <p>Regardless, after coming to this "final" version as downloadable. I've played even more board games, did even more playtest, I'm more inspired than ever before. While the game is fully playable and argubly smooth to play, there is still a lot of design to consider! From adding more ingredients that is core to the Banh Mi, to adding more hustling and bustling events that emulate the Vietnamese cityscape!</p>
+            <p>Is it a task nontheless daunting, yet I am more and more excited for it! Such is game dev.</p>
+
         </section>
 
         <section class="downloads">
