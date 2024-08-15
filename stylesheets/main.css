@@ -172,23 +172,34 @@ nav a:hover {
     }
 }
 
-.contact-links {
+.contact-icon {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between icons */
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    color: white; /* Icon and text color */
+    font-size: 2.5em; /* Initial icon size */
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Animation for size and color */
 }
 
-.contact-icon {
-    color: white; /* Icon color */
-    font-size: 2.5em; /* Initial icon size */
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Animation for size and color */
-    text-decoration: none;
+.contact-icon i {
+    margin-bottom: 5px; /* Space between icon and label */
+}
+
+.contact-iconv span {
+    font-size: 0.1em; /* Smaller text size for the label */
+    margin-top: 5px; /* Space above the label */
+    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+    color: white;
 }
 
 .contact-icon:hover {
     transform: scale(1.2); /* Increase size on hover */
     color: #FC8A17; /* Change color on hover */
+}
+
+.contact-icon:hover span {
+    color: #FC8A17; /* Change label color on hover */
 }
 
 

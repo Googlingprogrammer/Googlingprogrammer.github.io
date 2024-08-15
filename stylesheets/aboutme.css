@@ -105,7 +105,7 @@ p {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px; /* Reduced gap for better spacing */
     margin-top: 20px;
 }
 
@@ -114,9 +114,26 @@ p {
     font-size: 2.5em;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon i {
+    margin-bottom: 5px; /* Space between icon and label */
+}
+
+.contact-icon span {
+    font-size: 0.5em; /* Smaller text size for the label */
+    margin-top: 5px; /* Space above the label */
+    color: white;
 }
 
 .contact-icon:hover {
     transform: scale(1.2);
     color: #FC8A17;
+}
+
+.contact-icon:hover span {
+    color: #FC8A17; /* Change label color on hover */
 }
