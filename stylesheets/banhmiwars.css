@@ -9,7 +9,6 @@
 body {
     background-color: darkseagreen;
     font-family: "Poppins", "Avenir", Helvetica, sans-serif;
-    font-size: 2.5em;
     color: white;
     /* text-align: center; */
     margin: 0;
@@ -129,7 +128,6 @@ nav a:hover {
 }
 
 .intro-text {
-    margin: 150px;
     flex: 1; /* Allow the text to take up equal space */
     text-align: left; /* Align text to the left */
     color: white;
@@ -141,8 +139,9 @@ nav a:hover {
 }
 
 .intro-text p {
-    font-size: 1em;
+    font-size: 1.25em;
     margin-top: 10px;
+    margin-left: 0px;
 }
 
 @media (max-width: 768px) {
@@ -176,8 +175,9 @@ section img {
     margin-bottom: 20px;
 }
 section p{
+    font-size:1.5em;
     text-align: left;
-    margin-left : 200px;
+    margin-left : 150px;
 }
 
 section p span{
@@ -209,7 +209,7 @@ section p span{
 
 .download-icon i {
     margin-right: 8px;
-    font-size: 2zem;
+    font-size: 2em;
 }
 
 .downloads a:hover {
