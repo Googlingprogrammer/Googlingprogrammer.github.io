@@ -116,6 +116,9 @@ nav a:hover {
     padding: 20px;
     box-sizing: border-box;
 }
+.intro-content p{
+    padding-left:20px;
+}
 
 .media-video {
     flex: 1;
