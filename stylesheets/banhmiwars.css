@@ -170,12 +170,33 @@ section h2{
     font-size: 5em;
     font-family: Pixel, Avenir, Helvetica, sans-serif;
 }
+section h3{
+    text-align: left;
+    color: #ffffff;
+    margin-left:150px;
+    font-size: 3em;
+    font-family: Pixel, Avenir, Helvetica, sans-serif;
+}
 
 section img {
     width: 100%;
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
+}
+.image-center {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically if necessary */
+}
+
+.image-center img {
+    width: 50%; /* Keep the width of the image as specified */
+    max-width: 100%; /* Ensure the image does not exceed the width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners to the image */
+    border: 2px solid #FC8A17; /* Optional: add a border to match your theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
 section p{
     font-size:1.5em;
