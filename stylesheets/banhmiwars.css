@@ -186,22 +186,33 @@ section img {
 }
 .image-center {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically if necessary */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center the image and text horizontally */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .image-center img {
-    width: 50%; /* Keep the width of the image as specified */
-    max-width: 100%; /* Ensure the image does not exceed the width of the container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: add rounded corners to the image */
-    border: 2px solid #FC8A17; /* Optional: add a border to match your theme */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    width: 50%; /* Width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #FC8A17; /* Border to match theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 5px; /* Space between the image and text */
+}
+
+.image-center p{
+    font-size: 1em; /* Small text size */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Ensure text is centered */
+    max-width: 50%; /* Match the width of the image */
 }
 section p{
     font-size:1.5em;
     text-align: left;
     margin-left : 150px;
+    margin-right : 150px;
 }
 
 section p span{
