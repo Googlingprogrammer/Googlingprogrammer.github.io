@@ -258,13 +258,46 @@ section p span{
     width: 50%;
   }
 
-#cards_container{
-    margin-left: 150px;
+  .pixel-art-container {
+    display: flex; /* Make the container a flex container for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if the screen is too narrow */
+    gap: 20px; /* Space between each pixel art block */
+    justify-content: center; /* Center the items horizontally */
 }
-#cards_container img{
-    gap: 50px;
-    width: 15%;
-    height: auto;
-    padding: 0 10px; 
-    border-radius: 20px;
+
+.pixel-art {
+    margin-bottom: 20px; /* Space between each image block */
+}
+
+.pixel-art img {
+    image-rendering: pixelated; /* Ensure pixelated look */
+    width: auto; /* Adjust size for visibility */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Make sure image doesn't exceed container width */
+    margin-bottom: 5px; /* Space between the image and text */
+    border: none; /* Remove border for pixel art images */
+}
+
+.pixel-art p {
+    font-size: 1em; /* Small text size */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pixel-art-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    section p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .pixel-art {
+        width: 90%; /* Make pixel art container responsive */
+    }
 }
