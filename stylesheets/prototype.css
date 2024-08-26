@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@font-face {
+    font-family: "Pixel";
+    src: url('../fonts/pixelfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: darkseagreen;
+    font-family: "Poppins", "Avenir", Helvetica, sans-serif;
+    color: white;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    background-color: #3781f0; /* Gold color */
+    color: #ffffff; /* Black text color */
+    padding: 0.1em 0.1em; /* Some padding for better appearance */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+.hover-highlight {
+    position: relative;
+    color: #fff; /* Initial text color */
+}
+
+.hover-highlight::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #FC8A17; /* Highlight color */
+    z-index: -1; /* Place it behind the text */
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.hover-highlight:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+nav {
+    background-color: #FC8A17;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    font-family: "Pixel", "Avenir", Helvetica, sans-serif;
+    font-size:2.5em;
+    text-decoration: none;
+    color: white;
+    padding: 25px 0;
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: darkseagreen;
+}
+
+.content-wrapper {
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.media {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.media-images {
+    display: flex;
+    justify-content: space-between; /* Ensure images are spread across the full width */
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px; /* Add padding to ensure images don't touch the screen edges */
+    box-sizing: border-box;
+}
+
+.media-images img {
+    width: 100%; /* Make each image take up half the available width */
+    max-width: calc(50% - 10px); /* Ensure images are equal size with a gap */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #FC8A17;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+
+
+
+.intro-content {
+    display: flex;
+    align-items: center; /* Vertically align text and video */
+    justify-content: space-between; /* Add space between video and text */
+    gap: 20px; /* Space between video and text */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.intro-content p{
+    padding-left:20px;
+}
+
+.media-video {
+    flex: 1;
+    max-width: 50%; 
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #FC8A17;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    flex: 1; /* Allow the text to take up equal space */
+    text-align: left; /* Align text to the left */
+    color: white;
+}
+
+.intro-text h1,
+.intro-text h2 {
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-video,
+    .intro-text {
+        max-width: 100%;
+    }
+}
+
+
+/* General image styling for sections below "media" */
+section h2{
+    text-align: left;
+    background-color: #3781f0;
+    color: #ffffff;
+    padding: 0.1em 1em; /* Some padding for better appearance */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    font-size: 5em;
+    font-family: Pixel, Avenir, Helvetica, sans-serif;
+}
+section h3{
+    text-align: left;
+    color: #ffffff;
+    margin-left:150px;
+    font-size: 3em;
+    font-family: Pixel, Avenir, Helvetica, sans-serif;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.image-center {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center the image and text horizontally */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image-center img {
+    width: 50%; /* Width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #FC8A17; /* Border to match theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 5px; /* Space between the image and text */
+}
+
+.image-center p{
+    font-size: 1em; /* Small text size */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Ensure text is centered */
+    max-width: 50%; /* Match the width of the image */
+}
+section p{
+    font-size:1.5em;
+    text-align: left;
+    margin-left : 150px;
+    margin-right : 150px;
+}
+
+section p span{
+    font-weight: bolder;
+}
+
+/* Specific styling for sections with images */
+.how-to-play img,
+.cards img,
+.event-cards img {
+    display: block;
+    margin: 0 auto; /* Center the image if necessary */
+}
+
+.design-process img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.downloads a {
+    color: #FC8A17;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.download-icon i {
+    margin-right: 8px;
+    font-size: 2em;
+}
+
+.downloads a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.img_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#cards_container{
+    margin-left: 150px;
+}
+#cards_container img{
+    gap: 50px;
+    width: 15%;
+    height: auto;
+    padding: 0 10px; 
+    border-radius: 20px;
+}
